@@ -22,6 +22,7 @@
       android:name="com.android.dialer.postcall.PostCallActivity"
       android:exported="false"
       android:theme="@style/Theme.AppCompat.Light"
+      android:theme="@style/Dialer.ThemeBase.NoActionBar"
       android:windowSoftInputMode="adjustResize"/>
   </application>
 </manifest>

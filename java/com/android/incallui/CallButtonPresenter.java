@@ -68,7 +68,9 @@ public class CallButtonPresenter
         InCallButtonUiDelegate,
         DialerCallListener {
 
+
   private static final String KEY_RECORDING_WARNING_PRESENTED = "recording_warning_presented";
+
 
   private final Context context;
   private InCallButtonUi inCallButtonUi;
@@ -153,6 +155,7 @@ public class CallButtonPresenter
     Trace.beginSection("CallButtonPresenter.onStateChange");
     CallRecorder recorder = CallRecorder.getInstance();
     boolean isEnabled = PreferenceManager.getDefaultSharedPreferences(context).getBoolean(context.getString(R.string.auto_call_recording_key), false);
+
 
     if (call != null) {
       call.removeListener(this);
